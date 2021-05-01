@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+.flex {
+    align-content: center;
+}
+
+.flexchild {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
