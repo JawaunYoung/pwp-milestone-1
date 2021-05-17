@@ -1,0 +1,39 @@
+body {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body > nav {
+    background-color: black !important;
+    font-size: 1.5em;
+}
+
+
+.navbar-brand {
+    color: #B8860B !important;
+}
+
+#color {
+    color: red;
+}
+
+#smallPic {
+    width: 4em;
+}
+
+#intro {
+    width: 12em;
+    height: auto;
+    font-size: 4em;
+}
+
+#contactSection {
+    color: #B8860B;
+}
+
+.rounded-circle {
+    width: 19em;
+    height: auto;
+}
+
