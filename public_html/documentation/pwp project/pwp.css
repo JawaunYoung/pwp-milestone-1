@@ -14,18 +14,22 @@ body > nav {
     color: #B8860B !important;
 }
 
+
 #color {
     color: red;
 }
 
-#smallPic {
-    width: 4em;
-}
-
 #intro {
+    margin-top: 3em;
     width: 12em;
     height: auto;
-    font-size: 4em;
+    font-size: 3rem;
+}
+
+#secondPara {
+    width: 3em;
+    height: auto;
+    font-size: 3rem;
 }
 
 #contactSection {
@@ -37,3 +41,14 @@ body > nav {
     height: auto;
 }
 
+#myProjects {
+    margin-bottom: 4em;
+}
+
+h1,h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+
+h2 {color: #888; font-size: 2em;}
