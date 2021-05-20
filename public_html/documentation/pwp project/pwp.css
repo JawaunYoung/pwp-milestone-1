@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+
+$rotationAmt: -12;
+
+
 body {
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
@@ -9,13 +14,16 @@ body > nav {
     font-size: 1.5em;
 }
 
+#topImage {
+    margin-bottom: 3em;
+}
 
 .navbar-brand {
     color: #B8860B !important;
 }
 
 
-#color {
+.color {
     color: red;
 }
 
@@ -49,6 +57,19 @@ h1,h2 {
     font-weight: 200;
     margin: 0.4em 0;
 }
+
 h1 { font-size: 3.5em; }
 
 h2 {color: #888; font-size: 2em;}
+
+
+#threeD {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    grid-area: text;
+    font-size: 20vmin;
+    margin: 0;
+    padding: 30px;
+    color: #1d9099;
+    text-shadow: 1vmin 1vmin 0 #d9d4d4, -1vmin -1vmin 0 #6a160f;
+}
