@@ -2,14 +2,14 @@
 <project version="4">
   <component name="PublishConfigData" serverName="pwp-bootcamp-server" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="pwp-2">
+      <paths name="pwp-bootcamp-server">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="pwp-bootcamp-server">
+      <paths name="pwp-droplet">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />

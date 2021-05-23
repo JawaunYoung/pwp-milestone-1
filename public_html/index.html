@@ -12,75 +12,90 @@
 <body>
 
                                 <!--navBar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container d-flex">
             <a class="navbar-brand" href="#">Welcome()</a>
-            <div id="navbarNav">
-                <div class="navbar-nav ml-auto">
-                    <p><a class="nav-item nav-link active text-white" href="#"><span class="color">const</span> = ["About Me"</a></p>
-                    <p><a class="nav-item nav-link text-white" href="#">"Portfolio"</a></p>
-                    <p><a class="nav-item nav-link text-white" href="#">"Contact"]</a></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div id="navbarNav" class="ml-auto">
+                    <div class="navbar-nav ">
+                        <p><a class="nav-item nav-link active text-white" href="#"><span class="color">const</span> = ["About Me,"</a></p>
+                        <p><a class="nav-item nav-link text-white" href="#">"Portfolio,"</a></p>
+                        <p><a class="nav-item nav-link text-white" href="#">"Contact"]</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-<br>
+
                                 <!--welcome page-->
-  <section class="border border-dark m-3" id="firstPara">
-    <div class="container">
-        <div class="row p-5 m-2">
-            <div class="col-md-8 col-sm-6 text-white p-5" id="intro">
-                <h1>console.log(<span class="color">"H</span>i, my name is <span id="threeD">J</span>awaun Young, and I'm a<span class="color">
-                    Frontend Developer"</span>;</h1>
-            </div>
-            <div class="col-md-4 col-sm-6" id="topImage">
-                <img src="../image/profilePic.jpg" alt="profile picture" class="rounded-circle"><br>
-                <p class="m-5">fgfgfgfgfgfgfgfgfgfgfgfgfgfg<br>
-                fghggfhgfhgfhgfhgfhgfhgfhgfhghgh</p>
-            </div>
-        </div>
-    <!---------------------------------------------------------------------------------->
-        <div class="row">
-          <div class="col" id="secondPara">
-              <h1>
+            <section id="firstPara" class="border border-dark p-5">
+                <div class="container-fluid">
+                    <div class="row justify-content-around">
+                        <div class="col-md-3 col-sm-8 border border-dark" id="topImage">
+                            <figure>
+                                <img src="profilePic.jpg" alt="profile picture" class="rounded-circle img-fluid"><br>
+                                <figcaption class="m-5"></figcaption>
+                            </figure>
+                        </div>
 
-              </h1>
-
-          </div>
-        </div>
-    </div>
-  </section><br>
-
-                                <!--About me section-->
-    <section class="border border-dark m-4">
-        <div class="container p-5">
-                <div class="d-flex justify-content-center">
-                    <h1 class="text-white">{"About"}</h1>
+                        <!--second col/welcome page-->
+                        <div class="col-md-7 text-white border border-dark" id="intro">               <!--3D text (threeD)-->
+                            <h1 class="m-3">console.log(<span class="color">"H</span>i, my name is
+                                <span id="threeD">J</span><span id="name">awaun, </span> and I'm a<span class="color">
+                                Frontend Developer"</span>);</h1>
+                        </div>
+                    </div>
                 </div>
-            <div class="justify-content-center">
-                <div class="d-flex justify-content-center">
+            </section><br>
+
+                                <!--About me-->
+    <section class="border border-dark m-4">
+        <div class="wrapper container p-5 bg-transparent">
+                <div class="d-flex flex-column justify-content-center">
+                    <h1 class="text-white">About Me()</h1>
                     <p class="text-white p-2">HELLO THERE
-                        My name is Jawaun Young. I Create!...<br>
+                        I Create!...<br>
                         I'm a multi-disciplined designer based out of Anniston, Al.
                         My experience ranges from UI/UX wire-framing, and  Front-End Development. I enjoy
                         creating an experience that caters to the user's. I have a passion
                         for creativity and solving complex problems. Whenever I'm not in front of the
                         computer, im usually enjoying nature, or relaxing with my kids!</p>
                 </div>
-            </div>
+                <div class="d-flex justify-content-center border border-dark p-3" id="layer1">
+                    <div class="pr-3"><h2><span id="layer1ContentHeader">UI/UX Design</span></h2>
+                        <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
+                        <p>UX, UI, Web, Mobile, Apps, Logos</p>
+                        <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+                        <ul>
+                            <li>Balsamiq Mockups</li>
+                            <li></li>Mock Flow
+                            <li>Pen &amp; Paper</li>
+                            <li>Sketch</li>
+                        </ul>
+                    </div><hr>
+                    <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
+
+                    </div><hr>
+                    <div><h2><span id="layer1ContentHeader">Jawaun</span></h2>
+
+                    </div>
+                </div>
         </div>
     </section><br>
 
-                            <!--Portfolio section-->
-    <section class="border border-dark">
+                            <!--Portfolio-->
+    <section class="border border-dark mt-5 ">
         <div class=" p-5">
-            <div class="d-flex justify-content-center" id="myProjects">
-                <h1 class="text-white p-2">{"My Projects"}</h1>
+            <div class="d-flex justify-content-center mt-5 " id="myProjects">
+                <h1 class="text-white p-2 mt-5 ">My Projects()</h1>
             </div>
                 <div class="row m-3">
                     <div class="col" >
-                        <img src="../image/lapTop2.jpg" height="250" width="350"/>
+                        <img src="documentation/image/lapTop2.jpg" height="250" width="350"/>
                     </div>
                     <br>
                     <div class="col">
@@ -95,7 +110,7 @@
                 </div>
             <div class="row m-3 ">
                 <div class="col">
-                    <img src="../image/capStone1.jpg" height="250" width="350"/>
+                    <img src="documentation/image/capStone1.jpg" height="250" width="350"/>
                 </div>
                 <div class="col">
                     <p class="text-white p-2">
@@ -106,26 +121,23 @@
         </div>
     </section><br>
 
-                            <!--Contact section-->
+                            <!--Contact-->
     <section class="border border-dark">
             <div class="container p-5 d-flex justify-content-center">
-                 <div class=justify-content-center><h1 class="text-white">Get In Touch</h1></div>
-                    <div class="justify-content-center">
-                        <img src="">
-                    </div>
+                 <h1 class="text-white">Get In Touch()</h1>
 
                                 <!--Form-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
+
+
+<!--                        <div class="col-md-offset-3 m-5">-->
                             <div class="well well-sm text-white">
                                 <form class="form-horizontal" action="" method="post">
                                     <fieldset>
 
                                         <!-- Name input-->
                                         <div class="form-group">
-                                            <label class="col-md-3 control-label" for="name">Name</label>
-                                            <div class="col-md-9">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="">
                                                 <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
                                             </div>
                                         </div>
@@ -155,10 +167,8 @@
                                     </fieldset>
                                 </form>
                             </div>
-                        </div>
+<!--                        </div>-->
                     </div>
-                </div>
-            </div>
     </section>
 
 
