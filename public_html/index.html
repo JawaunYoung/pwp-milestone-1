@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div id="navbarNav" class="ml-auto">
                     <div class="navbar-nav ">
-                        <p><a class="nav-item nav-link active text-white" href="#"><span class="color">const</span> = ["About Me,"</a></p>
+                        <p><a class="nav-item nav-link active text-white" href="#"><span class="color">constMenu</span> = ["About Me,"</a></p>
                         <p><a class="nav-item nav-link text-white" href="#">"Portfolio,"</a></p>
                         <p><a class="nav-item nav-link text-white" href="#">"Contact"]</a></p>
                     </div>
@@ -35,7 +35,7 @@
             <section id="firstPara" class="border border-dark p-5">
                 <div class="container-fluid">
                     <div class="row justify-content-around">
-                        <div class="col-md-3 col-sm-8 border border-dark" id="topImage">
+                        <div class="col-md-3 col-sm-8" id="topImage">
                             <figure>
                                 <img src="profilePic.jpg" alt="profile picture" class="rounded-circle img-fluid"><br>
                                 <figcaption class="m-5"></figcaption>
@@ -43,9 +43,9 @@
                         </div>
 
                         <!--second col/welcome page-->
-                        <div class="col-md-7 text-white border border-dark" id="intro">               <!--3D text (threeD)-->
-                            <h1 class="m-3">console.log(<span class="color">"H</span>i, my name is
-                                <span id="threeD">J</span><span id="name">awaun, </span> and I'm a<span class="color">
+                        <div class="col-md-7 text-white" id="intro">
+                            <h1 class="m-3"><span id="console">console.log</span>(<span class="color">"H</span>i, my name is
+                                <span id="threeD">J</span><span id="name">awaun, </span> and I'm a<span class="color"><!--3D text (threeD)-->
                                 Frontend Developer"</span>);</h1>
                         </div>
                     </div>
@@ -53,12 +53,11 @@
             </section><br>
 
                                 <!--About me-->
-    <section class="border border-dark m-4">
-        <div class="wrapper container p-5 bg-transparent">
-                <div class="d-flex flex-column justify-content-center">
-                    <h1 class="text-white">About Me()</h1>
-                    <p class="text-white p-2">HELLO THERE
-                        I Create!...<br>
+    <section class="border border-dark m-4 aboutSection">
+        <div class="wrapper container-fluid p-5 bg-transparent">
+                <div class="about">
+                    <h1 class="d-flex justify-content-center " id="aboutMe">About Me()</h1>
+                    <p class="text-white p-2" id="create">HELLO THERE, I Create!...<br>
                         I'm a multi-disciplined designer based out of Anniston, Al.
                         My experience ranges from UI/UX wire-framing, and  Front-End Development. I enjoy
                         creating an experience that caters to the user's. I have a passion
@@ -66,9 +65,36 @@
                         computer, im usually enjoying nature, or relaxing with my kids!</p>
                 </div>
                 <div class="d-flex justify-content-center border border-dark p-3" id="layer1">
+                    <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
+                        <section class="bar-graph bar-graph-horizontal bar-graph-one">
+                            <div class="bar-one">
+                                <div class="bar" data-percentage="85%"></div>
+                                <span class="year">HTML</span>
+                            </div>
+                            <div class="bar-two">
+                                <div class="bar" data-percentage="75%"></div>
+                                <span class="year">CSS</span>
+                            </div>
+                            <div class="bar-three">
+                                <div class="bar" data-percentage="70%"></div>
+                                <span class="year">javaScript</span>
+                            </div>
+                            <div class="bar-four">
+                                <div class="bar" data-percentage="80%"></div>
+                                <span class="year">bootStrap</span>
+                            </div>
+                            <div class="bar-five">
+                                <div class="bar" data-percentage="65%"></div>
+                                <span class="year">MySQL</span>
+                            </div>
+                        </section>
+                    </div><hr>
+                    <div class="p-3 d-flex justify-content-center">
+                    <img id="imageTwo" src="../documentation/images/pictureOfManCoding.jpg" height="300" width="300"/>
+                    </div><hr>
                     <div class="pr-3"><h2><span id="layer1ContentHeader">UI/UX Design</span></h2>
                         <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
-                        <p>UX, UI, Web, Mobile, Apps, Logos</p>
+                        <p>UX, UI, Web, Mobile, Apps</p>
                         <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
                         <ul>
                             <li>Balsamiq Mockups</li>
@@ -77,44 +103,42 @@
                             <li>Sketch</li>
                         </ul>
                     </div><hr>
-                    <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
-
-                    </div><hr>
-                    <div><h2><span id="layer1ContentHeader">Jawaun</span></h2>
-
-                    </div>
                 </div>
         </div>
     </section><br>
 
                             <!--Portfolio-->
-    <section class="border border-dark mt-5 ">
+    <section class="border border-dark mt-5 portfolio">
         <div class=" p-5">
             <div class="d-flex justify-content-center mt-5 " id="myProjects">
                 <h1 class="text-white p-2 mt-5 ">My Projects()</h1>
             </div>
                 <div class="row m-3">
                     <div class="col" >
-                        <img src="documentation/image/lapTop2.jpg" height="250" width="350"/>
+                        <img src="documentation/image/lapTop2.jpg" height="250" width="350"/>  <!--picture-->
                     </div>
                     <br>
-                    <div class="col">
+                    <div class="col"><h2>Capstone Team Project</h2>
+
                         <p class="text-white p-2">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                            Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur<br>
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<br>
-                            Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                            This was my first team project working with three of peers, which we created a platform so
+                            that alien enthusiast can share and gossip about their experiences around New Mexico. This website
+                            captures the moments, opinions, gossip, and interactions from the people who wish to
+                            express themselves freely. AlienGram is also a place for the curious and skeptics to come
+                            and venture into new new avenues.<br>
                         </p>
                     </div>
                 </div>
             <div class="row m-3 ">
                 <div class="col">
-                    <img src="documentation/image/capStone1.jpg" height="250" width="350"/>
+                    <img src="documentation/image/capStone1.jpg" height="250" width="350"/>  <!--picture-->
                 </div>
                 <div class="col">
+                    <h2>Personal Web Site Project</h2>
                     <p class="text-white p-2">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                        My personal website was very exciting to build. I learned a lot about html structure and the<br>
+                        importance of clean, reusable code. I decided to make the theme resemble the way that code would look<br>
+                        as it's written inside of an IDE.
                     </p>
                 </div>
             </div>
@@ -128,8 +152,6 @@
 
                                 <!--Form-->
 
-
-<!--                        <div class="col-md-offset-3 m-5">-->
                             <div class="well well-sm text-white">
                                 <form class="form-horizontal" action="" method="post">
                                     <fieldset>

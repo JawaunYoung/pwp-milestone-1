@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
 
-/*$rotationAmt: -12;*/
-
+                                    /*html and body*/
 html, body {
     height: 100%;
     margin: 0;
@@ -12,6 +11,7 @@ body {
     background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body > nav {
@@ -20,10 +20,36 @@ body > nav {
     background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 1.5em;
 }
+/*_____________________________________________________________________-*/
 
-
+                                    /*Navbar*/
 .navbar-brand {
     color: #B8860B !important;
+}
+/*_____________________________________________________________________-*/
+
+                                    /*welcome page*/
+
+
+#topImage {
+    object-fit: contain;
+    margin-top: 5em;
+}
+
+.rounded-circle {
+    width: 19em;
+    height: auto;
+}
+
+#threeD {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    grid-area: text;
+    font-size: 20vmin;
+    margin: 0;
+    padding: 30px;
+    color: #ff0000;
+    text-shadow: 1vmin 1vmin 0 #ffff, -1vmin -1vmin 0 #808080;
 }
 
 #firstPara {
@@ -42,49 +68,67 @@ body > nav {
     margin: -0.5em;
 }
 
+#console {
+    color: #B8860B;
+}
+
 #intro {
     margin-top: 10em;
     font-size: 1.5rem;
 }
 
-#topImage {
-    object-fit: contain;
-    margin-top: 5em;
-}
+/*_____________________________________________________________________-*/
 
 
-#contactSection {
-    color: #B8860B;
-}
-
-.rounded-circle {
-    width: 19em;
-    height: auto;
-}
-
-.wrapper {
-    position: relative;
-    z-index: 0;
-    /*height: 25em;*/
-}
+                                            /*About Me Section*/
 
 #layer1 {
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-sizing: border-box;
-    /*position: absolute;*/
+    position: absolute;
     z-index: 2;
-    /*height: 15em;*/
     width: 100%;
-    margin-top: 5em;
+    margin-top: .5em;
     color: #190A05;
+}
 
+.wrapper {
+    position: relative;
+    z-index: 0;
 }
 
 #layer1ContentHeader {
     color: #B8860B;
 }
+
+.aboutSection {
+   margin-top: 3em;
+}
+
+
+#aboutMe {
+  font-size: 1.4em;
+    color: #B8860B;
+}
+
+#imageTwo {
+
+}
+
+#create {
+
+}
+/*________________________________________________*/
+
+
+                                            /*Portfolio Section*/
+
+.portfolio {
+
+}
+
 
 #myProjects {
     margin-bottom: 4em;
@@ -99,15 +143,149 @@ h1 { font-size: 3.5em; }
 
 
 h2 {color: #888; font-size: 2em;}
+/*_________________________________________________*/
+
+                                            /*Contact Section*/
+
+#contactSection {
+    color: #B8860B;
+}
 
 
-#threeD {
-    transform: rotate(45deg);
-    transform-origin: 50% 50%;
-    grid-area: text;
-    font-size: 20vmin;
-    margin: 0;
-    padding: 30px;
-    color: #ff0000;
-    text-shadow: 1vmin 1vmin 0 #ffff, -1vmin -1vmin 0 #808080;
+
+/*_________________________________________________*/
+                                            /* Bar Graph Horizontal */
+
+.bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+}
+
+.bar-graph-horizontal {
+    max-width: 380px;
+}
+
+.bar-graph-horizontal > div {
+    float: left;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.bar-graph-horizontal .year {
+    float: left;
+    margin-top: 18px;
+    width: 50px;
+}
+
+.bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+}
+
+.bar-graph-one .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+}
+
+.bar-graph-one .bar-one .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+    background-color: #5292ac;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+    background-color: #407286;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+    background-color: #2e515f;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+.bar-graph-one .bar-five .bar {
+    background-color: #2e515f;
+    -webkit-animation: show-bar-four 1.2s 0.5s forwards;
+    -moz-animation: show-bar-four 1.2s 0.5s forwards;
+    animation: show-bar-four 1.2s 0.5s forwards;
+}
+
+/* Bar Graph Horizontal Animations */
+@-webkit-keyframes show-bar-one {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 69.6%;
+    }
+}
+
+@-webkit-keyframes show-bar-two {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 71%;
+    }
+}
+
+@-webkit-keyframes show-bar-three {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 74.7%;
+    }
+}
+
+@-webkit-keyframes show-bar-four {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 76.8%;
+    }
+}
+
+@-webkit-keyframes show-bar-five {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50.8%;
+    }
+}
+
+@-webkit-keyframes fade-in-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
