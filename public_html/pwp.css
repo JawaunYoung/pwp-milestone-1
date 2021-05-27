@@ -2,17 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
                                     /*html and body*/
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -24,6 +13,11 @@ body {
     background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-sizing: border-box;
     font-family: "Helvetica", "Neue", "Helvetica", "Arial", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 body > nav {
@@ -136,14 +130,13 @@ body > nav {
 
                                             /*Portfolio Section*/
 
-.portfolio {
 
-}
+#project { color: #B8860B}
 
 
 #myProjects {
     margin-bottom: 4em;
-    font-size: 1.9em;
+    font-size: 2.3em;
 }
 
 h1,h2 {
@@ -156,7 +149,14 @@ h2 {color: #888; font-size: 2em;}
 /*_________________________________________________*/
 
                                             /*Contact Section*/
+.contact {
+    background-image: url('../documentation/images/code.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+#getInTouch { color: #B8860B}
 
 .container {
     max-width: 400px;
@@ -244,7 +244,6 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-    background: #43A047;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;

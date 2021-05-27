@@ -41,7 +41,7 @@
                 <div class="container-fluid">
                     <div class="row justify-content-around">
                         <div class="col-md-3 col-sm-8" id="topImage">
-                            <img src="images/jawaunYoung.jpg" height="500" width="500" class="rounded-circle"/>
+                            <img src="images/jawaunYoung.jpg" height="500" width="400" class=""/>
                             <figure>
                                 <figcaption class="m-5 text-white">Graduate of: Deep Dive Coding</figcaption>
                             </figure>
@@ -60,7 +60,7 @@
                                 <!--About me-->
     <section class="bg-transparent m-4 aboutSection">
         <div class="wrapper p-5">
-                    <h1 class="d-flex justify-content-center" id="aboutMe">About Me()</h1>
+                    <h1 class="d-flex justify-content-center mt-4" id="aboutMe">About Me()</h1>
                     <div class="d-flex justify-content-center m-5">
                         <p class="text-white p-2 m-2" id="create">HELLO THERE, I Create!...<br>
                             I'm a multi-disciplined designer based out of Anniston, Al.
@@ -74,24 +74,24 @@
                     <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
                         <section class="bar-graph bar-graph-horizontal bar-graph-one" id="graph">
                             <div class="bar-one">
-                                <div class="bar" data-percentage="85%"></div>
-                                <span class="chart ml-1">HTML</span>
+                                <div class="bar" data-percentage="65%"></div>
+                                <span class="chart ml-1">MySQL</span>
                             </div>
                             <div class="bar-two">
-                                <div class="bar" data-percentage="75%"></div>
-                                <span class="chart ml-1">CSS</span>
+                                <div class="bar" data-percentage="70%"></div>
+                                <span class="chart ml-1">bootStrap</span>
                             </div>
                             <div class="bar-three">
-                                <div class="bar" data-percentage="70%"></div>
+                                <div class="bar" data-percentage="75%"></div>
                                 <span class="chart ml-1">javaScript</span>
                             </div>
                             <div class="bar-four">
                                 <div class="bar" data-percentage="80%"></div>
-                                <span class="chart ml-1">bootStrap</span>
+                                <span class="chart ml-1">CSS</span>
                             </div>
                             <div class="bar-five">
-                                <div class="bar" data-percentage="65%"></div>
-                                <span class="chart ml-1">MySQL</span>
+                                <div class="bar" data-percentage="85%"></div>
+                                <span class="chart ml-1">HTML</span>
                             </div>
                         </section>
                     </div><hr>
@@ -117,7 +117,7 @@
     <section class="mt-2 portfolio">
         <div class=" p-2">
             <div class="d-flex justify-content-center" id="myProjects">
-                <h1 class="text-white p-2 mt-5 ">My Projects()</h1>
+                <h1 class="text-white p-2 mt-5 "><span id="project">My Projects()</span></h1>
             </div>
                 <div class="row m-3">
                     <div class="col" >
@@ -125,7 +125,7 @@
                     <br>
                     <div class="col"><h2>Capstone Team Project</h2>
 
-                        <p class="text-white p-2">
+                        <p class="text-white p-2" id="">
                             This was my first team project working with three of peers, which we created a platform so
                             that alien enthusiast can share and gossip about their experiences around New Mexico. This website
                             captures the moments, opinions, gossip, and interactions from the people who wish to
@@ -143,7 +143,7 @@
                     <h2>Personal Web Site Project</h2>
                     <p class="text-white p-2">
                         My personal website was very exciting to build. I learned a lot about html structure and the<br>
-                        importance of clean, reusable code. I decided to make the theme resemble the way that code would look<br>
+                        importance of clean, reusable code. I decided to make the theme resemble the way that code would look
                         as it's written inside of an IDE.
                     </p>
                 </div>
@@ -153,10 +153,10 @@
 
                             <!--Contact-->
 
-                <div class="container">
+                <div class="container contact">
                     <div class="container p-5 mt-3">
-                        <h1 class="text-white d-flex justify-content-center mt-2">Get In Touch()</h1><br>
-                    <form id="contact" action="" method="post">
+                        <h1 class="text-white d-flex justify-content-center mt-2"><span id="getInTouch">Get In Touch()</span></h1><br>
+                    <form id="contact" onsubmit="return false" method="post">
                         <fieldset>
                             <input placeholder="Your name" type="text" tabindex="1" required autofocus>
                         </fieldset>
@@ -177,7 +177,7 @@
                         </fieldset>
                     </form>
                 </div>
-
+                </div>
                                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
                                         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
                                         crossorigin="anonymous"></script>

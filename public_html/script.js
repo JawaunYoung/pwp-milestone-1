@@ -1,3 +1,7 @@
+$('#form').submit(function (e) {
+    e.preventDefault();
+});
+
 $(document).ready(
     $("#contact").validate({
         debug:true,
