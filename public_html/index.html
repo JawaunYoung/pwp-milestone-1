@@ -32,7 +32,7 @@
 
 
                                 <!--welcome page-->
-            <section id="firstPara" class="border border-dark p-5">
+            <section id="firstPara" class=" p-5">
                 <div class="lines">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -41,9 +41,9 @@
                 <div class="container-fluid">
                     <div class="row justify-content-around">
                         <div class="col-md-3 col-sm-8" id="topImage">
+                            <img src="images/jawaunYoung.jpg" height="500" width="500" class="rounded-circle"/>
                             <figure>
-                                <img src="profilePic.jpg" alt="profile picture" class="rounded-circle img-fluid"><br>
-                                <figcaption class="m-5"></figcaption>
+                                <figcaption class="m-5 text-white">Graduate of: Deep Dive Coding</figcaption>
                             </figure>
                         </div>
 
@@ -58,7 +58,7 @@
             </section><br>
 
                                 <!--About me-->
-    <section class="border border-dark bg-transparent m-4 aboutSection">
+    <section class="bg-transparent m-4 aboutSection">
         <div class="wrapper p-5">
                     <h1 class="d-flex justify-content-center" id="aboutMe">About Me()</h1>
                     <div class="d-flex justify-content-center m-5">
@@ -70,41 +70,41 @@
                             computer, im usually enjoying nature, or relaxing with my kids!
                         </p>
                     </div>
-                <div class="d-flex justify-content-center border border-dark mt-2" id="layer1">
+                <div class="d-flex justify-content-center border border-dark mt-2 mr-2" id="layer1">
                     <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
                         <section class="bar-graph bar-graph-horizontal bar-graph-one" id="graph">
                             <div class="bar-one">
                                 <div class="bar" data-percentage="85%"></div>
-                                <span class="year">HTML</span>
+                                <span class="chart ml-1">HTML</span>
                             </div>
                             <div class="bar-two">
                                 <div class="bar" data-percentage="75%"></div>
-                                <span class="year">CSS</span>
+                                <span class="chart ml-1">CSS</span>
                             </div>
                             <div class="bar-three">
                                 <div class="bar" data-percentage="70%"></div>
-                                <span class="year">javaScript</span>
+                                <span class="chart ml-1">javaScript</span>
                             </div>
                             <div class="bar-four">
                                 <div class="bar" data-percentage="80%"></div>
-                                <span class="year">bootStrap</span>
+                                <span class="chart ml-1">bootStrap</span>
                             </div>
                             <div class="bar-five">
                                 <div class="bar" data-percentage="65%"></div>
-                                <span class="year">MySQL</span>
+                                <span class="chart ml-1">MySQL</span>
                             </div>
                         </section>
                     </div><hr>
                     <div class="p-3 d-flex justify-content-center">
-                    <img id="imageTwo" src="../documentation/images/pictureOfManCoding.jpg" height="300" width="300"/>
+                        <img id="imageTwo" src="../documentation/images/pictureOfManCoding.jpg" height="300" width="300"/>
                     </div><hr>
-                    <div class="pr-3"><h2><span id="layer1ContentHeader">UI/UX Design</span></h2>
+                    <div class="p-3"><h2><span id="layer1ContentHeader">UI/UX Design</span></h2>
                         <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
                         <p>UX, UI, Web, Mobile, Apps</p>
                         <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
                         <ul>
                             <li>Balsamiq Mockups</li>
-                            <li></li>Mock Flow
+                            <li>Mock Flow</li>
                             <li>Pen &amp; Paper</li>
                             <li>Sketch</li>
                         </ul>
@@ -114,15 +114,14 @@
     </section><br>
 
                             <!--Portfolio-->
-    <section class="border border-dark mt-2 portfolio">
+    <section class="mt-2 portfolio">
         <div class=" p-2">
             <div class="d-flex justify-content-center" id="myProjects">
                 <h1 class="text-white p-2 mt-5 ">My Projects()</h1>
             </div>
                 <div class="row m-3">
                     <div class="col" >
-                        <img src="documentation/image/lapTop2.jpg" height="250" width="350"/>  <!--picture-->
-                    </div>
+                        <img src="images/alienGram.jpg" height="250" width="350"/></div>  <!--picture-->
                     <br>
                     <div class="col"><h2>Capstone Team Project</h2>
 
@@ -135,6 +134,7 @@
                         </p>
                     </div>
                 </div>
+            <br>
             <div class="row m-3 ">
                 <div class="col">
                     <img src="documentation/image/capStone1.jpg" height="250" width="350"/>  <!--picture-->
@@ -152,51 +152,31 @@
     </section><br>
 
                             <!--Contact-->
-    <section class="border border-dark">
-            <div class="container p-5 d-flex justify-content-center">
-                 <h1 class="text-white">Get In Touch()</h1>
 
-                                <!--Form-->
-
-                            <div class="well well-sm text-white">
-                                <form class="form-horizontal" action="" method="post">
-                                    <fieldset>
-
-                                        <!-- Name input-->
-                                        <div class="form-group">
-                                            <label class="control-label" for="name">Name</label>
-                                            <div class="">
-                                                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <!-- Email input-->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
-                                            <div class="col-md-9">
-                                                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <!-- Message body -->
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="message">Your message</label>
-                                            <div class="col-md-9">
-                                                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <!-- Form actions -->
-                                        <div class="form-group">
-                                            <div class="col-md-12 text-right">
-                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                    </div>
-    </section>
+                <div class="container">
+                    <div class="container p-5 mt-3">
+                        <h1 class="text-white d-flex justify-content-center mt-2">Get In Touch()</h1><br>
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
 
                                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
                                         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
