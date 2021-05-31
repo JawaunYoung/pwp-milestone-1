@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c8b2926e-37e6-4bca-b988-97571825f0e3" name="pwp-droplet" url=" https://142.93.77.193">
+        <fileTransfer rootFolder="/home/jyoung84/pwp" accessType="SFTP" host="142.93.77.193" port="22" sshConfigId="97b902e0-fc20-48f5-a130-29ac9babb890" sshConfig="jyoung84@142.93.77.193:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
