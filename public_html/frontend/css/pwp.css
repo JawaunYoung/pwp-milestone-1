@@ -28,23 +28,27 @@ body > nav {
 /*_____________________________________________________________________-*/
 
 
-/*html entities*/
-#entities {color: #B8860B}
+/*!*html entities*!*/
+/*#entities {color: #B8860B}*/
 
 /*______________________________________________________________________*/
 
                                     /*welcome page*/
 
-
-#topImage {
-    object-fit: contain;
-    margin-top: 5em;
-}
-
-.rounded-circle {
-    width: 19em;
+#bCircle {
+    z-index: 0;
+    width: 15em;
     height: auto;
 }
+
+#tcircle {
+    z-index: 1;
+}
+
+/*#topImage {*/
+/*    object-fit: contain;*/
+/*    margin-top: 5em;*/
+/*}*/
 
 
 #threeD {
@@ -272,16 +276,16 @@ body > nav {
 /*________________________________________________*/
 
 
-                                            /*Portfolio Section*/
+                                            /*Project Section*/
 
 
-#project { color: #B8860B}
-
-
-#myProjects {
+#project {
+    color: #B8860B;
     margin-bottom: 4em;
-    font-size: 2.3em;
+    font-size: 1.5em;
 }
+
+
 
 h1,h2 {
     font-weight: 100;
