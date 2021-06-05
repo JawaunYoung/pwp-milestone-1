@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Personal Web Site Project</title>
@@ -19,10 +19,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div id="navbarNav" class="ml-auto">
-                    <div class="navbar-nav ">
-                        <p><a class="nav-item nav-link active text-white" href="#"><span class="color">constMenu</span> = ["About Me,"</a></p>
-                        <p><a class="nav-item nav-link text-white" href="#myProjects">"Portfolio,"</a></p>
-                        <p><a class="nav-item nav-link text-white" href="#contactSection">"Contact"]</a></p>
+                    <div class="navbar-nav mr-4">
+                        <p><a class="nav-item nav-link active text-white" href="#aboutMe"><span class="color">constMenu</span> = ["aboutMe,"</a></p>
+                        <p><a class="nav-item nav-link text-white" href="#myProjects">"myProjects,"</a></p>
+                        <p><a class="nav-item nav-link text-white" href="#contactSection">"getInTouch"]</a></p>
                     </div>
                 </div>
             </div>
@@ -30,45 +30,26 @@
     </nav>
 
 
-        <div class="container-fluid p-5 row justify-content-around mt-4" id="firstPara" >
-                <div class="col-md-4 col-sm-8 mt-5" id="topImage">
-                    <figure><img id="tCircle" class="img-fluid" src="frontend/images/backGroundForProfilePic2.png" alt="profile picture" height="1022" width="973"/>
-                        <figcaption class="m-5 text-white">
-                                Graduate of: Deep Dive Coding
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-7 text-white" id="intro">
-                    <h1 class="m-3"><span id="console">console.log</span>(<span class="color">"H</span>i, my name is
-                        <span id="threeD">J</span><span id="name">awaun, </span> and I'm a<span class="color">
-                            Frontend Developer"</span>);
-                    </h1>
-                </div>
-        </div> <br>
-
-
-
-
-    <section class="m-4 aboutSec">
-        <h1 class="d-flex justify-content-center mt-4" id="aboutMe">About Me()</h1>
-            <div class=" wrapper p-5 d-flex justify-content-center m-5">
-                <p class="text-white p-2 m-2" id="create"><span>&lt;p&gt;</span>I Love To Create!...<br>
-                    I'm a disciplined designer based out of Anniston, Al.
-                    My talents range from UI/UX wire-framing, and  Front-End Development. I enjoy
-                    creating an experience that users can enjoy. I have a passion
-                    for creativity and solving complex problems. Before I began web development I started out
-                    as a logistics tech in the U.S Army. After my obligations with the military I worked as a
-                    shipping and receiving clerk for various companies, but eventually I found that I wasn't really
-                    happy with working with in that industry. So, one day I started to research different types of careers
-                    and I came across a wep page that explained what web developers do and what it takes to become one...
-                    I became fascinated with technology, therefore, I was grateful to be apart of my fullstack web development
-                    program; where I learned how to deploy responsive web applications and to think about the end user, and
-                    how I can build or help build a product that satisfies the customer<span id="entities">&lt;p&gt;</span>
-                </p>
+        <div class=" row container-fluid p-5 justify-content-center mt-1" id="firstPara" >
+            <div class="col-md-3 col-sm-6 mt-5">
+                <img id="tCircle" class="img-fluid" src="frontend/images/backGroundForProfilePic2.png" alt="profile picture" height="1022" width="973"/>
+                <p class="text-white ml-5">Graduate of: Deep Dive Coding</p>
             </div>
-                <div class="d-flex justify-content-center border border-dark mt-2 mr-2" id="layer1">
-                    <div class="pr-3 m-3"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
-                        <div class="bar-graph bar-graph-horizontal bar-graph-one" id="graph">
+            <div class="col-md-8 col-sm-6 text-white" id="intro">
+                <h1 id="log" class="m-5"><span id="console">console.log</span>(<span class="color">"H</span>i, my name is
+                    <span id="threeD">J</span><span id="name">awaun</span><br>and I'm a<span class="color"> Frontend Developer"</span>);
+                </h1>
+            </div>
+        </div>
+
+    <br>
+
+        <div class=" wrapper container" id="aboutSec">
+            <h1 class=" d-flex justify-content-center" id="aboutMe"><span>About Me()</span></h1>
+            <div class="container">
+                <div class="d-flex justify-content-center border border-dark" id="layer1">
+                    <div class="p-2"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
+                        <div class=" col-sm-12 col-md-8 bar-graph bar-graph-horizontal bar-graph-one p-3" id="graph">
                             <div class="bar-one">
                                 <div class="bar" data-percentage="65%"></div>
                                 <span class="chart ml-1">MySQL</span>
@@ -101,85 +82,127 @@
                         <ul>
                             <li>Balsamiq Mockups</li>
                             <li>Mock Flow</li>
-                            <li>Pen &amp; Paper</li>
                             <li>Sketch</li>
                         </ul>
                     </div>
                 </div>
-    </section>
-    <br>
-    <section class="mt-4" id="myProjects">
-        <h1 class="text-white p-2 mt-5 "><span id="project">My Projects()</span></h1>
+            </div>
+                <div class="row justify-content-center mr-4  p-3">
+                    <div class="col-md-6 col-sm-12 paraWrap">
+                        <p class="m-4 p-4 col-sm-12" id="firstParaAboutMe">
+                            <span style="color: #B8860B;">&lt;p&gt;</span>I Love To Create New Things!...<br>
+                            I'm a disciplined designer based out of Anniston, Al.
+                            My talents range from UI/UX wire-framing, and  Front-End Development. I enjoy
+                            creating an experience that users can enjoy.<span style="color: #B8860B;">&lt;p&gt;</span>
+                        </p>
+                    </div>
+                    <div class="row justify-content-center mr-4  p-3">
+                        <div class="col-md-6 col-sm-12 paraWrap">
+                            <p  class="m-4 p-4 col-sm-12" id="secondParaAboutMe">
+                                <span style="color: #B8860B;">&lt;p&gt;</span>Before I began web development I started out
+                                as a logistics tech in the U.S Army. After my obligations with the military I worked as a
+                                shipping and receiving clerk for various companies, but eventually I found that I wasn't really
+                                happy with working with in that industry.<span style="color: #B8860B;">&lt;p&gt;</span>
+                            </p>
+                        </div>
+                    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12 paraWrap">
+                    <p class="m-4 p-4" id="thirdParaAboutMe">
+                        <span style="color: #B8860B;">&lt;p&gt;</span>So, one day I started to research different types of careers
+                        and I came across a wep page that explained what web developers do and what it takes to become one...
+                        I became fascinated with technology, and decided to pursue a career as a web developer. I now take pride in
+                        how I can build or help build a product that satisfies the customer.<span style="color: #B8860B;">&lt;p&gt;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<br><br>
+
+    <section class="m-4" id="myProjects">
+        <h2 class="d-flex justify-content-center mt-4"><span id="project">My Projects()</span></h2>
             <div class="row m-3 d-flex justify-content-center">
-                <div class="col">
+                <div class="col-md-6 col-sm-4">
                     <img src="frontend/images/alienGram.jpg" alt="picture of space" height="250" width="350"/>
                 </div>
                 <br>
-                    <div class="col"><h2>Capstone Team Project</h2>
-                        <p class="text-white p-2">
-                            <span>&lt;p&gt;</span>This was my first team project working with three of my peers during our web development cohort.
-                            We created a platform so that alien enthusiast can share and gossip about their experiences
-                            around New Mexico; it's called AlienGram. This is where I learned how to implement industry proven problem solving techniques
-                            while developing a full stack web application using Express, Node, MySQL, HTML, CSS, and JavaScript.<span>&lt;p&gt;</span>
-                        </p>
-                    </div>
+                <div class="col"><h2>Capstone Team Project</h2>
+                    <p class="text-white p-2" id="gram">
+                        <span style="color: #B8860B;">&lt;p&gt;</span>This was my first team project working with three of my peers during our web development cohort.
+                        We created a platform so that alien enthusiast can share and gossip about their experiences
+                        around New Mexico; it's called AlienGram. This is where I learned how to implement industry proven problem solving techniques
+                        while developing a full stack web application using Express, Node, MySQL, HTML, CSS, and JavaScript.<span style="color: #B8860B;">&lt;p&gt;</span>
+                    </p>
                 </div>
+            </div>
             <br>
             <div class="row m-3">
-                <div class="col">
+                <div class="col-md-6 col-sm-4">
                     <img src="frontend/images/justAnotherLapTop.jpg" alt="" height="250" width="350"/>
                 </div>
-                    <div class="col"><h2>Personal Web Site Project</h2>
-                        <p class="text-white p-2">
-                            <span>&lt;p&gt;</span>My personal website was very exciting to build. I learned a lot about documentation<br>
-                            and file structure, especially the  importance and of clean, reusable code. I utilized boostrap 4<br>
-                            and its components for a better user friendly responsive website regardless of device size.<span>&lt;p&gt;</span>
-                        </p>
-                    </div>
+                <div class="col"><h2>Personal Web Site Project</h2>
+                    <p class="text-white p-2" id="pwp">
+                        <span style="color: #B8860B;">&lt;p&gt;</span>My personal website was very exciting to build. I learned a lot about documentation
+                        and file structure, especially the  importance and of clean, reusable code. I utilized boostrap 4
+                        and its components for a better user friendly responsive website regardless of device size.<span style="color: #B8860B;">&lt;p&gt;</span>
+                    </p>
+                </div>
             </div>
     </section>
 
 
-        <section class="contact-wrap mt-3 text-white">
-            <h1  class="d-flex justify-content-center mt-5" id="contactSection"><span id="getInTouch">Get In Touch()</span></h1>
-                <form class="contact-form">
-                    <div class="col-sm-6">
-                        <div class="input-block">
-                            <label for="firstName">First Name</label>
+        <section class="contact-wrap text-white">
+            <h2 class="d-flex justify-content-center mt-5" id="contactSection"><span id="getInTouch">Get In Touch()</span></h2>
+                <form class="contact-form justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="input-block">
+                                <label for="firstName">First Name</label>
                                 <input id="firstName" type="text" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="input-block">
-                            <label for="lastName">Last Name</label>
-                            <input id="lastName" type="text" class="form-control">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="input-block">
+                                <label for="lastName">Last Name</label>
+                                <input id="lastName" type="text" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="input-block">
-                            <label for="emailInput">Email</label>
-                            <input id="emailInput" type="text" class="form-control">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="input-block">
+                                <label for="emailInput">Email</label>
+                                <input id="emailInput" type="text" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="input-block">
-                            <label for="messageInput">Message Subject</label>
-                            <input id="messageInput" type="text" class="form-control">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="input-block">
+                                <label for="messageInput">Message Subject</label>
+                                <input id="messageInput" type="text" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="input-block textarea">
-                            <label>Drop your message here</label>
-                            <label>
-                                <textarea rows="3" type="text" class="form-control"></textarea>
-                            </label>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="input-block textarea">
+                                <label>Drop your message here</label>
+                                <textarea rows="3" class="form-control"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <button class="square-button">Send</button>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-sm-6 col-md-8">
+                            <button class="btn-grad">Send</button>
+                        </div>
                     </div>
                 </form>
         </section>
+    <footer></footer>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

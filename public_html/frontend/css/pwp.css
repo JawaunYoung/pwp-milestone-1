@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');*/
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);*/
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);*/
 
 
                                     /*html and body*/
@@ -21,34 +21,25 @@ body > nav {
 }
 /*_____________________________________________________________________-*/
 
+
                                     /*Navbar*/
-.navbar-brand {
-    color: #B8860B !important;
-}
-/*_____________________________________________________________________-*/
 
-
-/*!*html entities*!*/
-/*#entities {color: #B8860B}*/
-
-/*______________________________________________________________________*/
-
-                                    /*welcome page*/
-
-#bCircle {
-    z-index: 0;
-    width: 15em;
+.navbar-nav {
+    box-sizing: border-box;
     height: auto;
 }
 
-#tcircle {
-    z-index: 1;
+.navbar-brand {
+    color: #B8860B !important;
 }
 
-/*#topImage {*/
-/*    object-fit: contain;*/
-/*    margin-top: 5em;*/
-/*}*/
+                                    /*welcome page*/
+
+
+
+#tCircle {
+    margin-top: 3em;
+}
 
 
 #threeD {
@@ -93,47 +84,75 @@ body > nav {
 
                                             /*About Me Section*/
 
-.wrapper {
-    position: relative;
-    z-index: 1;
+#aboutMe {
+    font-size: 1.5em;
+    color: #B8860B;
+    margin-bottom: 1em;
+    margin-top: 6em;
+ }
+
+
+#aboutSec {
+    /*background-color: #595959;*/
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 3em;
 }
+
+
+.aboutSec span {
+    color: #B8860B;
+}
+
 
 #layer1 {
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: relative;
-    z-index: 2;
-    width: 80%;
+    background-image: linear-gradient(315deg, #ffffff 30%, #d7e1ec 60%);
     color: #190A05;
-    margin-left: 7em;
     opacity: 0.8;
-    filter: alpha(opacity=10); /* For Internet Explorer 8 and earlier */
 }
+
 
 #layer1ContentHeader {
     color: #B8860B;
 }
 
+
 #layer2ContentHeader {
     color: #B8860B;
 }
 
-.aboutSec {
-   margin-top: 3em;
+
+#tCircle {
+    width: 20em;
+    height: auto;
 }
 
-
-#aboutMe {
-  font-size: 2.3em;
-    color: #B8860B;
+.wrapper {
+    position: relative;
 }
 
-#create {
-    width: 70%;
-    font-size: 1.5em;
+#firstParaAboutMe {
+    background-color: #F5F5F5;
+    border: 3px #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 10px 10px;
 }
 
+#secondParaAboutMe {
+    background-color: #F5F5F5;
+    border: 3px #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 10px 10px;
+}
+
+#thirdParaAboutMe {
+    background-color: #F5F5F5;
+    border: 3px #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 10px 10px;
+}
 /*_________________________________________________*/
                                                 /* Bar Graph Horizontal */
 
@@ -201,13 +220,13 @@ body > nav {
 }
 
 .bar-graph-horizontal {
-    max-width: 380px;
+    max-width: 20em;
 }
 
 .bar-graph-horizontal > div {
     float: left;
     margin-bottom: 8px;
-    width: 100%;
+    width: 50%;
 }
 
 .bar-graph-horizontal .chart {
@@ -282,7 +301,8 @@ body > nav {
 #project {
     color: #B8860B;
     margin-bottom: 4em;
-    font-size: 1.5em;
+    margin-top: 4em;
+    font-size: .9em;
 }
 
 
@@ -294,11 +314,18 @@ h1,h2 {
 
 
 h2 {color: #888; font-size: 2em;}
+
+#gram {font-size: 1em;}
+
+#pwp {font-size: 1em;}
 /*_________________________________________________*/
 
                                             /*Contact Section*/
 
-#getInTouch { color: #B8860B}
+#getInTouch {
+    color: #B8860B;
+    margin-top: 5em;
+}
 
 form { width:50em; margin:50px auto; }
 
@@ -341,4 +368,26 @@ textarea {
     margin-top:-4px;
     font-weight:700;
 }
+
 [type="submit"]:hover { background:#CC4949; }
+
+
+.btn-grad {background-image: linear-gradient(to right, #EB5757 0%, #000000  51%, #EB5757  100%)}
+.btn-grad {
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 130% auto;
+    color: white;
+    box-shadow: 0 0 13px #eee;
+    border-radius: 8px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
