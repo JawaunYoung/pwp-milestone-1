@@ -1,6 +1,17 @@
-/*@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');*/
-/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);*/
-/*@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);*/
+.paraWrap { font-size: 1rem; }
+
+@media (min-width: 576px) {
+    .paraWrap { font-size: 1.25rem; }
+}
+@media (min-width: 768px) {
+    .paraWrap { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+    .paraWrap { font-size: 1.75rem; }
+}
+@media (min-width: 1200px) {
+    .paraWrap { font-size: 2rem; }
+}
 
 
                                     /*html and body*/
@@ -12,6 +23,7 @@ body {
     background-color: #000000 !important;
     box-sizing: border-box;
     font-family: "Helvetica", "Neue", "Helvetica", "Arial", "sans-serif";
+    min-width: auto;
 }
 
 body > nav {
@@ -19,6 +31,8 @@ body > nav {
     background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 1.5em;
 }
+
+
 /*_____________________________________________________________________-*/
 
 
@@ -84,77 +98,7 @@ body > nav {
 
                                             /*About Me Section*/
 
-#aboutMe {
-    font-size: 1.5em;
-    color: #B8860B;
-    margin-bottom: 1em;
-    margin-top: 6em;
- }
-
-
-#aboutSec {
-    /*background-color: #595959;*/
-    font-size: 1.5em;
-    color: black;
-    margin-bottom: 3em;
-}
-
-
-.aboutSec span {
-    color: #B8860B;
-}
-
-
-#layer1 {
-    background: #ECE9E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(315deg, #ffffff 30%, #d7e1ec 60%);
-    color: #190A05;
-    opacity: 0.8;
-}
-
-
-#layer1ContentHeader {
-    color: #B8860B;
-}
-
-
-#layer2ContentHeader {
-    color: #B8860B;
-}
-
-
-#tCircle {
-    width: 20em;
-    height: auto;
-}
-
-.wrapper {
-    position: relative;
-}
-
-#firstParaAboutMe {
-    background-color: #F5F5F5;
-    border: 3px #F5F5F5;
-    box-sizing: border-box;
-    box-shadow: 10px 10px;
-}
-
-#secondParaAboutMe {
-    background-color: #F5F5F5;
-    border: 3px #F5F5F5;
-    box-sizing: border-box;
-    box-shadow: 10px 10px;
-}
-
-#thirdParaAboutMe {
-    background-color: #F5F5F5;
-    border: 3px #F5F5F5;
-    box-sizing: border-box;
-    box-shadow: 10px 10px;
-}
-/*_________________________________________________*/
-                                                /* Bar Graph Horizontal */
+/* Bar Graph Horizontal */
 
 
 @-webkit-keyframes show-bar-one {
@@ -237,7 +181,7 @@ body > nav {
 
 .bar-graph-horizontal .bar {
     border-radius: 3px;
-    height: 55px;
+    height: 40px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -250,10 +194,9 @@ body > nav {
     animation: fade-in-text 2.2s 0.1s forwards;
     color: #fff;
     content: attr(data-percentage);
-    font-weight: 700;
+    font-weight: 600;
     position: absolute;
     right: 16px;
-    top: 17px;
 }
 
 .bar-graph-one .bar-one .bar {
@@ -292,6 +235,67 @@ body > nav {
 }
 
 
+
+#aboutMe {
+    font-size: 1.5em;
+    color: #B8860B;
+    margin-bottom: 1em;
+    margin-top: 6em;
+ }
+
+
+
+.flow {
+    overflow: auto;
+}
+
+#layer1 {
+    background-color: #F5F5F5;
+    border: 3px #F5F5F5;
+    color: #190A05;
+    opacity: 0.9;
+    margin: auto;
+    width: 75%;
+}
+
+
+#firstContentHeader {
+    color: #B8860B;
+}
+
+
+#secondContentHeader {
+    color: #B8860B;
+}
+
+
+#tCircle {
+    width: 20em;
+    height: auto;
+}
+
+
+.paraWrap {
+    margin: auto;
+}
+
+#firstParaAboutMe {
+    border: 3px #F5F5F5;
+}
+
+
+#secondParaAboutMe {
+    border: 3px #F5F5F5;
+}
+
+#thirdParaAboutMe {
+    border: 3px #F5F5F5;
+}
+
+
+#uiUxDesign {
+    color: black;
+}
 /*________________________________________________*/
 
 
@@ -299,9 +303,8 @@ body > nav {
 
 
 #project {
+    margin-bottom: 2em;
     color: #B8860B;
-    margin-bottom: 4em;
-    margin-top: 4em;
     font-size: .9em;
 }
 
@@ -315,9 +318,9 @@ h1,h2 {
 
 h2 {color: #888; font-size: 2em;}
 
-#gram {font-size: 1em;}
+#gram {font-size: 1.5em;}
 
-#pwp {font-size: 1em;}
+#pwp {font-size: 1.5em;}
 /*_________________________________________________*/
 
                                             /*Contact Section*/

@@ -6,8 +6,20 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="frontend/css/pwp.css">
     <link rel="stylesheet" href="frontend/js/pwp.js">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- jQuery Form, Additional Methods, Validate -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+    <!-- Google reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Your JavaScript Form Validator -->
+    <script src="frontend/js/form-validate.js"></script>
 </head>
 
 <body>
@@ -30,104 +42,123 @@
     </nav>
 
 
-        <div class=" row container-fluid p-5 justify-content-center mt-1" id="firstPara" >
-            <div class="col-md-3 col-sm-6 mt-5">
-                <img id="tCircle" class="img-fluid" src="frontend/images/backGroundForProfilePic2.png" alt="profile picture" height="1022" width="973"/>
-                <p class="text-white ml-5">Graduate of: Deep Dive Coding</p>
-            </div>
-            <div class="col-md-8 col-sm-6 text-white" id="intro">
-                <h1 id="log" class="m-5"><span id="console">console.log</span>(<span class="color">"H</span>i, my name is
+        <div class="d-flex justify-content-center" id="firstPara" >
+            <div class=" text-white" id="intro">
+                <h1 id="log" class="m-5 w-100"><span id="console">console.log</span>(<span class="color">"H</span>i, my name is
                     <span id="threeD">J</span><span id="name">awaun</span><br>and I'm a<span class="color"> Frontend Developer"</span>);
                 </h1>
             </div>
         </div>
+        <div class="d-flex justify-content-center">
+                <div class=" mt-5">
+                    <img id="tCircle"  class="img-fluid" src="frontend/images/backGroundForProfilePic2.png" alt="profile picture" height="900" width="758"/>
+                    <p class="text-white ml-5">Graduate of: Deep Dive Coding</p>
+                    <p class="text-white ml-5">Age: 37</p>
+                    <p class="text-white ml-5">Favorite Anime: Bleach</p>
+                    <p class="text-white ml-5">Most exciting thing i've done: Parachuting</p>
+                    <p class="text-white ml-5">Things I love: My Kids, Family, Friends, Nature, and webDevelopment</p>
+                </div>
+        </div>
 
     <br>
 
-        <div class=" wrapper container" id="aboutSec">
-            <h1 class=" d-flex justify-content-center" id="aboutMe"><span>About Me()</span></h1>
-            <div class="container">
-                <div class="d-flex justify-content-center border border-dark" id="layer1">
-                    <div class="p-2"><h2><span id="layer1ContentHeader">Frontend Developer</span></h2>
-                        <div class=" col-sm-12 col-md-8 bar-graph bar-graph-horizontal bar-graph-one p-3" id="graph">
-                            <div class="bar-one">
-                                <div class="bar" data-percentage="65%"></div>
-                                <span class="chart ml-1">MySQL</span>
-                            </div>
-                            <div class="bar-two">
-                                <div class="bar" data-percentage="70%"></div>
-                                <span class="chart ml-1">bootStrap</span>
-                            </div>
-                            <div class="bar-three">
-                                <div class="bar" data-percentage="75%"></div>
-                                <span class="chart ml-1">javaScript</span>
-                            </div>
-                            <div class="bar-four">
-                                <div class="bar" data-percentage="80%"></div>
-                                <span class="chart ml-1">CSS</span>
-                            </div>
-                            <div class="bar-five">
-                                <div class="bar" data-percentage="85%"></div>
-                                <span class="chart ml-1">HTML</span>
+
+            <h1 class=" d-flex justify-content-center d-3" id="aboutMe"><span>About Me()</span></h1>
+                <div id="layer1">
+                    <div class="row d-flex justify-content-center pl-3"  >
+                        <div class="col">
+                            <h2><span id="firstContentHeader">Frontend Developer</span></h2>
+                            <div class=" bar-graph bar-graph-horizontal bar-graph-one p-3" id="graph">
+                                <div class=" bar-one">
+                                    <div class="bar" data-percentage="65%"></div>
+                                    <span class=" chart ml-1">MySQL</span>
+                                </div>
+                                <div class=" bar-two">
+                                    <div class="bar" data-percentage="70%"></div>
+                                    <span class="chart ml-1">bootStrap</span>
+                                </div>
+                                <div class="bar-three">
+                                    <div class="bar" data-percentage="85%"></div>
+                                    <span class="chart ml-1">HTML</span>
+                                </div>
+                                <div class="bar-four">
+                                    <div class="bar" data-percentage="80%"></div>
+                                    <span class="chart ml-1">CSS</span>
+                                </div>
+                                <div class="bar-five">
+                                    <div class="bar" data-percentage="78%"></div>
+                                    <span class="chart ml-1">javaScript</span>
+                                </div>
                             </div>
                         </div>
-                    </div><hr>
-                    <div class="p-3 d-flex justify-content-center">
-                        <img id="imageTwo" src="frontend/images/pictureOfManCoding.jpg" alt="laptop image" height="300" width="300"/>
-                    </div><hr>
-                    <div class="p-3"><h2><span id="layer2ContentHeader">UI/UX Design</span></h2>
-                        <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
-                        <p>UX, UI, Web, Mobile, Apps</p>
-                        <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
-                        <ul>
-                            <li>Balsamiq Mockups</li>
-                            <li>Mock Flow</li>
-                            <li>Sketch</li>
-                        </ul>
+                        <div class="col">
+                            <div class="p-3">
+                                <img id="imageTwo" src="frontend/images/pictureOfManCoding.jpg" alt="laptop image" height="300" width="300"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pl-3">
+                    <div class="col-md-6 p-3 mt-4" id="uiUxDesign">
+                        <div><h2><span id="secondContentHeader">UI/UX Design</span></h2>
+                            <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
+                            <p>UX, UI, Web, Mobile, Apps</p>
+                            <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+                            <ul>
+                                <li>Balsamiq Mockups</li>
+                                <li>Mock Flow</li>
+                                <li>Sketch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3">
+                            <img src="frontend/images/DayInTheLife.png" height="300" width="300"/>
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </div>
-                <div class="row justify-content-center mr-4  p-3">
-                    <div class="col-md-6 col-sm-12 paraWrap">
-                        <p class="m-4 p-4 col-sm-12" id="firstParaAboutMe">
-                            <span style="color: #B8860B;">&lt;p&gt;</span>I Love To Create New Things!...<br>
+    <hr>
+    <div class="paraWrap w-75 mt-5 text-white">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <p class="m-4 p-4" id="firstParaAboutMe">
+                            <span style="color: #B8860B;">&lt;p&gt;</span>I Love To Create cool Things!...<br>
                             I'm a disciplined designer based out of Anniston, Al.
                             My talents range from UI/UX wire-framing, and  Front-End Development. I enjoy
                             creating an experience that users can enjoy.<span style="color: #B8860B;">&lt;p&gt;</span>
                         </p>
                     </div>
-                    <div class="row justify-content-center mr-4  p-3">
-                        <div class="col-md-6 col-sm-12 paraWrap">
-                            <p  class="m-4 p-4 col-sm-12" id="secondParaAboutMe">
-                                <span style="color: #B8860B;">&lt;p&gt;</span>Before I began web development I started out
-                                as a logistics tech in the U.S Army. After my obligations with the military I worked as a
-                                shipping and receiving clerk for various companies, but eventually I found that I wasn't really
-                                happy with working with in that industry.<span style="color: #B8860B;">&lt;p&gt;</span>
+                    <div class="row justify-content-center">
+                    <div class="col">
+                        <p  class="m-4 p-4 " id="secondParaAboutMe">
+                            <span style="color: #B8860B;">&lt;p&gt;</span>Before I began web development I started out
+                            as a logistics tech in the U.S Army. After my obligations with the military I worked as a
+                            shipping and receiving clerk for various companies, but eventually I found that I wasn't really
+                            happy working with in that industry.<span style="color: #B8860B;">&lt;p&gt;</span>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <p class="m-4 p-4" id="thirdParaAboutMe">
+                                <span style="color: #B8860B;">&lt;p&gt;</span>So, one day I came across a wep page that explained what web developers do and what it takes to become one...
+                                I became fascinated with the languages, frameworks, and tools, and decided to pursue a career as a web developer. I now take pride in
+                                how I can build or help build a product that satisfies the customer.<span style="color: #B8860B;">&lt;p&gt;</span>
                             </p>
                         </div>
                     </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-12 paraWrap">
-                    <p class="m-4 p-4" id="thirdParaAboutMe">
-                        <span style="color: #B8860B;">&lt;p&gt;</span>So, one day I started to research different types of careers
-                        and I came across a wep page that explained what web developers do and what it takes to become one...
-                        I became fascinated with technology, and decided to pursue a career as a web developer. I now take pride in
-                        how I can build or help build a product that satisfies the customer.<span style="color: #B8860B;">&lt;p&gt;</span>
-                    </p>
                 </div>
-            </div>
-        </div>
-
+    </div>
 <br><br>
 
-    <section class="m-4" id="myProjects">
-        <h2 class="d-flex justify-content-center mt-4"><span id="project">My Projects()</span></h2>
-            <div class="row m-3 d-flex justify-content-center">
+    <section class="m-5" id="myProjects">
+        <h2 class="d-flex justify-content-center mt-5"><span id="project">My Projects()</span></h2>
+            <div class="row  mt-5 d-flex justify-content-center">
                 <div class="col-md-6 col-sm-4">
                     <img src="frontend/images/alienGram.jpg" alt="picture of space" height="250" width="350"/>
                 </div>
                 <br>
-                <div class="col"><h2>Capstone Team Project</h2>
+                <div class="col "><h2>Capstone Team Project</h2>
                     <p class="text-white p-2" id="gram">
                         <span style="color: #B8860B;">&lt;p&gt;</span>This was my first team project working with three of my peers during our web development cohort.
                         We created a platform so that alien enthusiast can share and gossip about their experiences
@@ -137,7 +168,7 @@
                 </div>
             </div>
             <br>
-            <div class="row m-3">
+            <div class="row mt-3">
                 <div class="col-md-6 col-sm-4">
                     <img src="frontend/images/justAnotherLapTop.jpg" alt="" height="250" width="350"/>
                 </div>
@@ -197,10 +228,15 @@
                     </div>
                     <div class="row justify-content-center my-3">
                         <div class="col-sm-6 col-md-8">
-                            <button class="btn-grad">Send</button>
+                            <button class=" btn-grad g-recaptcha"
+                                    data-sitekey="reCAPTCHA_site_key"
+                                    data-callback='onSubmit'
+                                    data-action='submit'>Send
+                            </button>
                         </div>
                     </div>
                 </form>
+            <div id="output-area"></div>
         </section>
     <footer></footer>
 
