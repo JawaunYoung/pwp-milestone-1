@@ -24,6 +24,7 @@ body {
     box-sizing: border-box;
     font-family: "Helvetica", "Neue", "Helvetica", "Arial", "sans-serif";
     min-width: auto;
+    overflow-x: hidden;
 }
 
 body > nav {
@@ -292,6 +293,9 @@ body > nav {
     border: 3px #F5F5F5;
 }
 
+#profileSec {
+    margin: auto;
+}
 
 #uiUxDesign {
     color: black;
