@@ -1,3 +1,3 @@
 
-# This is a website that displays my web development skills.
+# Personal Website which displays my frontend developer skills.
 
